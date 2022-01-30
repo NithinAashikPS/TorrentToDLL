@@ -1,0 +1,20 @@
+{
+    "name": "Telegram Movie Upload.",
+    "description": "Telegram Movie Upload.",
+    "keywords": [
+        "telegram",
+        "shell",
+        "rclone",
+        "heroku"
+    ],
+    "repository": "",
+    "env": {
+        "RCLONE_CONFIG_BASE64": {
+            "description": "Your Rclone config encoded using Base64",
+            "required": true
+        }
+    },
+    "buildpacks": [{
+        "url": "heroku/python"
+    }]
+}
